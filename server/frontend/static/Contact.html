@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Us - Dealerships</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="/static/bootstrap.min.css">
+    <style>
+        /* Optional: Add some extra spacing */
+        .contact-info p {
+            margin-bottom: 0.8rem;
+        }
+        .contact-icon {
+            max-width: 150px; /* Adjust icon size as needed */
+            height: auto;
+            display: block;
+            margin: 2rem auto; /* Center icon vertically and horizontally */
+        }
+        .dealership-img {
+            width: 100%;
+            height: auto;
+            max-height: 300px; /* Limit image height if needed */
+            object-fit: cover; /* Cover the area nicely */
+            border-radius: 0.25rem 0.25rem 0 0; /* Match card top corners */
+        }
+        .contact-card-body {
+            padding: 2rem 3rem; /* Add padding inside the card body */
+        }
+        
+        .contact-info strong {
+            color: #0d6efd; /* Bootstrap primary blue, adjust if needed */
+            font-weight: bold; /* Ensure bold */
+            display: block; /* Put category on its own line */
+            margin-bottom: 0.25rem;
+        }
+        .contact-info a, .contact-info span { /* Style links and plain text consistently */
+            color: #0d6efd; /* Bootstrap primary blue, adjust if needed */
+             text-decoration: none; /* Remove underline from links */
+             display: block; /* Put detail on its own line */
+        }
+         .contact-info a:hover {
+             text-decoration: underline; /* Add underline on hover */
+         }
+    </style>
+</head>
+<body>
+    <div>
+      <nav class="navbar navbar-expand-lg navbar-light" style="background-color:darkturquoise; height: 1in;">
+        <div class="container-fluid">
+          <h2 style="padding-right: 5%;">Dealerships</h2>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" style="font-size: larger;" aria-current="page" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" style="font-size: larger;" href="/about">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" style="font-size: larger;" href="/contact">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+        <div class="card" style="width: 80%; margin: 3rem auto;">
+            <!-- Dealership Image -->
+            <img class="dealership-img" src="/static/car_dealership.jpg" alt="Dealership Lot">
+
+            <div class="card-body contact-card-body">
+                <div class="row mt-4">
+                    <!-- Left Column: Icon -->
+                    <div class="col-5 icon-col border-end">
+                         <img src="https://img.icons8.com/ios-filled/100/40E0D0/headset.png" alt="Support Icon" class="contact-icon">
+                         <!-- You might need to find a suitable icon URL or file -->
+                    </div>
+
+                    <!-- Right Column: Contact Details -->
+                    <div class="col-7 text-col">
+                        <div class="contact-info">
+                        <p>
+                            <strong>Contact Customer Service</strong><br>
+                            <a href="mailto:support@bestcars.com">support@bestcars.com</a>
+                        </p>
+                        <p>
+                            <strong>Contact our National Advertising team</strong><br>
+                            <a href="mailto:NationalSales@bestcars.com">NationalSales@bestcars.com</a>
+                        </p>
+                        <p>
+                            <strong>Contact our Public Relations team</strong><br>
+                            <a href="mailto:PR@bestcars.com">PR@bestcars.com</a>
+                        </p>
+                        <p>
+                            <strong>Contact the bestcars.com offices</strong><br>
+                            <a href="tel:312-611-1111">312-611-1111</a>
+                        </p>
+                        <p>
+                            <strong>Become a bestcars.com car dealer</strong><br>
+                            <a href="http://growwithbestcars.com" target="_blank" rel="noopener noreferrer">Visit growwithbestcars.com</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional: Add Bootstrap JS if needed for dropdowns etc., though not strictly required for this layout -->
+    <!-- <script src="/static/bootstrap.bundle.min.js"></script> -->
+</body>
+</html>
